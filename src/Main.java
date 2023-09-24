@@ -18,7 +18,7 @@ public class Main {
 
         // math
         double totalPrice = itemPrice + extaCost;
-//output
+
         System.out.println("Shipping is: " + extaCost + " ");
         System.out.println("Item is: " + totalPrice + " ");
 
