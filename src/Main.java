@@ -4,7 +4,7 @@ public class Main {
         Scanner myObj = new Scanner(System.in);
         String userName;
 
-        // Enter username and press Enter
+        // Enter username and press Enter yes
         System.out.println("Enter username");
         userName = myObj.nextLine();
 
