@@ -1,13 +1,27 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        String userName;
+        Scanner scanner = new Scanner(System.in);
 
-        // Enter username and press Enter yes
-        System.out.println("Enter username");
-        userName = myObj.nextLine();
+        // user enters price
+        System.out.println("Enter price of item: ");
+        double itemPrice = scanner.nextDouble();
 
-        System.out.println("Username is: " + userName);
+    // checks if price is viable for free shipping
+      double extaCost;
+        if (itemPrice >= 100.0) {
+            extaCost = 0.0;
+        }
+        else {
+            extaCost = 0.02 * itemPrice;
+        }
+
+        // math
+        double totalPrice = itemPrice + extaCost;
+
+        System.out.println("Shipping is: " + extaCost + " ");
+        System.out.println("Item is: " + totalPrice + " ");
+
+        scanner.close();
     }
 }
